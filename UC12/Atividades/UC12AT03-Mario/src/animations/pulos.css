@@ -1,0 +1,56 @@
+.pulo1 {
+    animation: pulo1 500ms ease-out;
+}
+
+@keyframes pulo1{
+    0%{
+        bottom: 40px;
+    }
+    50%{
+        bottom: 220px;
+    }
+    60%{
+        bottom: 210px;
+    }
+    100%{
+        bottom: 40px;
+    }
+}
+
+.pulo2 {
+    animation: pulo2 500ms ease-out;
+}
+
+@keyframes pulo2{
+    0%{
+        bottom: 40px;
+    }
+    50%{
+        bottom: 230px;
+    }
+    60%{
+        bottom: 220px;
+    }
+    100%{
+        bottom: 40px;
+    }s
+}
+
+.pulo3 {
+    animation: pulo3 1500ms ease-out;
+}
+
+@keyframes pulo3{
+    0%{
+        bottom: 40px;
+    }
+    33%{
+        bottom: 230px;
+    }
+    66%%{
+        bottom: 180px; 
+    }
+    100%{
+        bottom: 40px;
+    }
+}

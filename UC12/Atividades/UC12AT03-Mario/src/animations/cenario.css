@@ -1,0 +1,29 @@
+.game-container {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+.fundo {
+    background: url('../imagem/ceu518x1440.jpg') repeat-x;
+    height: 518px;
+    width: 2880px;
+    animation: slide 16s linear infinite;
+}
+
+.piso {
+    background: url('../imagem/piso40x1440.jpg') repeat-x;
+    height: 40px;
+    width: 2880px;
+    animation: slide 8s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(-1440px); /* The image width */
+    }
+}
