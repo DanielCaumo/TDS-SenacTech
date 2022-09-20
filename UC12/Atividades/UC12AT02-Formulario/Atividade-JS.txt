@@ -1,0 +1,11 @@
+Atividade de hoje:
+Refatorar atividade desenvolvida como aula12 que segue anexo aqui.
+Copiar e modificar para cadastrar Pessoa Física ou Jurídica.
+Incluir campos:
+  Tipo de Pessoa - exibir input de CPF ou CNPJ conforme tipo selecionado
+  Telefone Celular e Fixo
+  Endereço
+  Estado Civil
+  Sexo
+Incluir ainda validação e mascara para os inputs que for necessário.
+Ao final exibir na tela em um alert os dados inseridos. 

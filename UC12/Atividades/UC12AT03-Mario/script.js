@@ -1,7 +1,15 @@
+// Elementos Visuais
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
 const fundo = document.querySelector(".fundo");
 const piso = document.querySelector(".piso");
+
+// Áudios
+const somjogar = ;
+const sompular = ;
+const somperder = ;
+
+
 
 const pulo = () => {
     mario.classList.add("pulo3");

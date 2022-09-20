@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UC 12 - Aula 12 - Formulário de Contato</title>
+    <meta name="description" content="Layouts">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="Author" content="Daniel Caumo">
+    <link rel="icon" type="image/icon" href="assets/imgs/favicon.png">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1>Cadastro</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="https://google.com" target="_blank">Google</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Formulário de Cadastro</h2><br/>
+            <form name="cadastro" action="" method="get">
+                <div class="row">
+                    <div class="col1">
+                        <input type="radio" name="pessoa" id="cpf" value="cpf" oninput="mostraInputPessoa()">
+                        <label for="cpf">CPF</label>
+                        <input type="radio" name="pessoa" id="cnpj" value="cnpj" oninput="mostraInputPessoa()">
+                        <label for="cnpj">CNPJ</label><br/>
+                    </div>
+                    <div class="col2">
+                        <input type="text" id="cpfField" name="cpfField" placeholder="Informe o CPF" oninput="mascaraCPF(this)">
+                        <input type="text" id="cnpjField" name="cnpjField" placeholder="Informe o CNPJ" oninput="mascaraCNPJ(this)">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col1">
+                        <label for="nome">Nome:</label>
+                    </div>
+                    <div class="col2">
+                        <input type="text" id="nome" name="nome" placeholder="Fulano de Tal" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col1">
+                        <label for="estadoCivil">Estado civil:</label>
+                    </div>
+                    <div class="col2">
+                        <select name="estadoCivil" id="estadoCivil">
+                            <option value="">Selecione...</option>
+                            <option value="Solteiro">Solteiro</option>
+                            <option value="Casado">Casado</option>
+                            <option value="Divorciado">Divorciado</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col1">
+                        <legend>Sexo:</legend>
+                    </div>
+                    <div class="col2">
+                        <input type="radio" name="sexo" id="feminino" value="feminino">
+                        <label for="feminino">Feminino</label>
+                        <input type="radio" name="sexo" id="masculino" value="masculino">
+                        <label for="masculino">Masculino</label><br/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col1">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="col2">
+                        <input type="email" id="email" name="email" placeholder="fulanodetal@email.com.br" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col1">
+                        <label for="telefoneFixo">Telefone Fixo:</label>
+                    </div>
+                    <div class="col2">
+                        <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx xxxx" oninput="mascaraFone(this)" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col1">
+                        <label for="tel">Celular:</label>
+                    </div>
+                    <div class="col2">
+                        <input type="tel" id="celular" name="celular" placeholder="(xx) xxxxx xxxx" oninput="mascaraFone(this)" required>
+                    </div>
+                </div>
+
+            
+
+                <div class="row">
+                    <div class="col1">
+                        <label for="endereco">Endereço:</label>
+                    </div>
+                    <div class="col2">
+                        <input type="text" id="endereco" name="endereco" placeholder="Informe o endereço completo" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col1">
+                        <label for="cidade">Cidade:</label>
+                    </div>
+                    <div class="col2">
+                        <select name="cidade" id="cidade">
+                            <option value="">Selecione...</option>
+                            <option value="POA">Porto Alegre</option>
+                            <option value="CAC">Caxias</option>
+                            <option value="CAN">Canoas</option>
+                            <option value="GRV">Santa Maria</option>
+                            <option value="VIA">Pelotas</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col1">
+                        <label for="opiniao">Mensagem:</label>
+                    </div>
+                    <div class="col2">
+                        <textarea name="opiniao" id="opiniao" cols="25" rows="10" maxlength="100" placeholder="escreva aqui!"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="reset" value="limpar" class="botao">
+                    <input type="submit" value="enviar" class="botao"" onclick="return valida()">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <h5>&copy; Todos os direitos reservados.</h5>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

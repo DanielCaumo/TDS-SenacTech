@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana;
+    background-color: rgb(238, 229, 229);
+}
+
+.titulo {
+    background-image: linear-gradient(white,lightgray);
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+nav {
+    display: none;
+}
+
+.menu ul {
+    padding-left: 0px;
+}
+
+.menu ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 0 25px;
+    float: left;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    transition: 400ms;
+    padding: 10px;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.menu li:hover {
+    color: black;
+    background-color: gray;
+}
+
+.menu a:hover {
+    color: darkblue;
+}
+
+footer {
+    text-align: center;
+}
+
+
+img {
+    width: 300px;
+}
+
+p {
+    text-align: justify;
+}
+
+.container {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #f2f2f2
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=text], input[type=email], input[type=tel], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    resize: vertical;
+}
+
+input[type=reset],
+input[type=submit] {
+    float: right;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+input[type=reset]{
+    background-color: red;
+}
+
+input[type=submit]{
+    background-color: rgb(12, 128, 12);
+}
+
+input[type=reset]:hover {
+    background-color: coral;
+    color: black;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(120, 184, 25);
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col1 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col2 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 600px) {
+    .col1, .col2, input[type=reset], input[type=submit] {
+        width: 100%;
+    }
+
+    h2 {
+      color: green;  
+    }
+}
+
+#cpfField, #cnpjField {
+    display: none;
+}
