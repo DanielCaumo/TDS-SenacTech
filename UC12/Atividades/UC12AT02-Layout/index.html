@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UC 12 - Aula 14 - Exercício Layout</title>
+    <meta name="description" content="Layouts">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="Author" content="Daniel Caumo">
+    <link rel="icon" type="image/icon" href="assets/imgs/favicon.png">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <header>
+        <h1>UC12A14 - Exercício Layout</h1>
+        <h2 class="subtitulo">Redimensione a janela do navegador para ver o efeito.</h2>
+    </header>
+    <nav>
+        <ul>
+            <div>
+                <li><a href="page2.html" target="_blank">Hello, world!</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </div>
+            <div>
+                <li><a href="#">Link</a></li>
+            </div>
+        </ul>
+    </nav>
+    <main>
+        <section class="artigos">
+            <article class="artigo">
+                <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank"><h2 class="artigo-titulo">Guia de CSS Flexbox</h2></a>
+                <h3 class="artigo-subtitulo">Chris Coyier, 8 de Abril de 2013 (Atualizado em 30 de Agosto de 2022)</h3>
+                <figure>
+                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank"><img src="assets/imgs/flexbox.png" alt="" class="imagem-artigo"></a>
+                    
+                </figure>
+                <p class="artigo-texto">Guia de CSS Grid do CSS-Tricks</p>
+                <p class="artigo-texto">Um guia abrangente para o layout flexbox CSS. Este guia completo explica tudo sobre flexbox, focando em todas as diferentes propriedades possíveis para o elemento pai (o recipiente flex) e os elementos da criança (os itens flex). Ele também inclui histórico, demonstrações, padrões e um gráfico de suporte ao navegador.</p>
+            </article>
+            <article class="artigo">
+                <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"><h2 class="artigo-titulo">Guia de CSS Grid</h2></a>
+                <h3 class="artigo-subtitulo">Chris House, 12 de Maio de 2021 (Atualizado em 19 de Agosto de 2022)</h3>
+                <figure>
+                    <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"><img src="assets/imgs/grid.jpg" alt="" class="imagem-artigo"></a>
+                    
+                </figure>
+                <p class="artigo-texto">Guia de CSS Grid do CSS-Tricks</p>
+                <p class="artigo-texto">Um guia abrangente para o CSS Grid, focando em todas as configurações tanto para o contêiner pai da grade quanto para os elementos da criança da grade.</p>
+            </article>
+        </section>
+        <div class="lateral">
+            <section class="sobre">
+                <h2 class="sobre-titulo">About Me</h2>
+                <img src="assets/imgs/perfil.jfif" alt="" class="sobre-foto">
+                <p class="sobre-texto">Sou Daniel, um aprendiz de desenvolvimento com foco em front-end. Explorando React e Redux.</p>
+            </section>
+            <section class="posts">
+                <h2 class="posts-titulo">Popular Post</h2>
+                <a href="https://www.devmedia.com.br/html/"><img src="assets/imgs/html.png" alt="" class="posts-imagem"></a>
+                <a href="https://tipscode.com.br/especificidade-css-5-coisas-que-voce-precisa"><img src="assets/imgs/css.png" alt="" class="posts-imagem"></a>
+                <a href="https://www.devmedia.com.br/javascript-tutorial/37257"><img src="assets/imgs/javscript.jfif" alt="" class="posts-imagem"></a>
+            </section>
+            <section class="sociais">
+                <h2 class="sociais-titulo">Follow Me</h2>
+                <a href="https://github.com/DanielCaumo" target="_blank">GitHub</a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <h2>&copy;Todos os direitos reservados.</h2>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+@import url(reset.css);
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    width: 97%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.intro {
+    background-color: rgb(222, 236, 232);
+    margin: 10px auto;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 20px 0 10px 0;
+}
+
+button {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background-color: rgb(81, 140, 196);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+.topicos {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 20px 0;
+}
+
+.topico {
+    width: calc(33% - 10px);
+}
+
+.topico-titulo {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.topico-link {
+    display: block;
+    margin-top: 10px;
+}
+
+.cards-e-institucional {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards {
+    display: flex;
+    width: 66%;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(33% - 10px);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.card-imagem {
+    width: 100%
+}
+
+.card-titulo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.card-texto {
+    padding: 5px;
+}
+
+.card-links {
+    padding-left: 5px;
+}
+
+.institucional {
+    width: calc(33% - 10px);
+}
+
+.institucional-imagem {
+    width: 50%;
+}
+
+.institucional-titulo {
+    font-weight: 600;
+    margin: 5px 0 10px 0;
+}
+
+.institucional-texto {
+    margin-bottom: 10px;
+}
